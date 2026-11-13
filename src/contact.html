@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    {{> title-meta title="Технический запрос" }}
+
+    {{> head-css}}
+</head>
+<body>
+
+    {{> navbar }}
+<a class="potok-skip" href="#main-content">К содержимому</a>
+<main id="main-content">
+
+    <section class="overflow-hidden relative size-full pt-50 bg-default-100">
+<div class="container-full relative z-10">
+<div class="grid xl:grid-cols-2 items-start xl:gap-25 gap-12.5 mb-32.5">
+<div class="lg:w-152 h-full flex flex-col">
+<h1 class="lg:text-7xl md:text-[56px] text-[48px] mb-7.5">Готовы <span class="text-primary">обсудить</span> вашу <br/> задачу</h1>
+<p class="mb-7.5">
+                        Выберите оборудование, добавьте описание процесса и скачайте технический запрос. Это демонстрационная форма: данные не отправляются компании.
+                    </p>
+<div>
+<a class="group inline-flex items-center gap-5 rounded rounded-ee-2xl bg-default-900 text-base font-medium text-white transition-all" href="contact.html">
+<!-- TEXT -->
+<span class="py-3.75 ps-6">
+<span class="relative block overflow-hidden">
+<span class="block group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Описать задачу
+                                    </span>
+<span class="absolute top-7 start-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                        Описать задачу
+                                    </span>
+</span>
+</span>
+<!-- ICON -->
+<span class="m-1.25 flex size-10 items-center justify-center rounded rounded-ee-xl bg-primary text-white">
+<span class="relative block overflow-hidden">
+<span class="block group-hover:translate-x-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+<i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+</span>
+<span class="absolute top-0 end-7 group-hover:end-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+<i class="iconify tabler--arrow-narrow-right flex size-6"></i>
+</span>
+</span>
+</span>
+</a>
+</div>
+<div class="flex lg:gap-20 gap-10 mt-auto pt-10">
+<div>
+<div class="text-primary mb-5">// ЧТО ПОДГОТОВИТЬ //</div>
+<div class="flex flex-col gap-2">
+<a class="underline decoration-transparent transition-all duration-300 hover:decoration-default-600" href="#request-form">Вид и размеры груза</a>
+<a class="underline decoration-transparent transition-all duration-300 hover:decoration-default-600" href="#request-form">Схему рабочего участка</a>
+<a class="underline decoration-transparent transition-all duration-300 hover:decoration-default-600" href="#request-form">Условия эксплуатации</a>
+</div>
+</div>
+<div>
+<div class="text-primary mb-5">// СЛЕДУЮЩИЙ ШАГ //</div>
+<div class="flex flex-col gap-2">
+<p>Сформируйте технический запрос</p>
+<p>Сохраните его для обсуждения проекта</p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-7.5 bg-linear-to-br from-black via-black to-primary rounded-lg">
+<form class="grid md:grid-cols-2 gap-7.5" data-request-form="" id="request-form"><p class="md:col-span-2 text-sm text-default-300">Форма создаёт файл на вашем устройстве. Запрос никуда не отправляется; реальные контактные данные для просмотра демонстрации не нужны.</p>
+<div>
+<label class="text-default-300 block mb-2.5" for="request-name">Ваше имя *</label>
+<input autocomplete="name" class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" id="request-name" maxlength="256" minlength="2" name="name" required="" type="text"/>
+</div>
+<div>
+<label class="text-default-300 block mb-2.5" for="request-company">Компания</label>
+<input autocomplete="organization" class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" id="request-company" maxlength="256" name="company" type="text"/>
+</div>
+<div>
+<label class="text-default-300 block mb-2.5" for="request-email">Электронная почта *</label>
+<input autocomplete="email" class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" id="request-email" maxlength="256" name="email" required="" type="email"/>
+</div>
+<div>
+<label class="text-default-300 block mb-2.5" for="request-phone">Телефон</label>
+<input autocomplete="tel" class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" id="request-phone" maxlength="256" name="phone" type="tel"/>
+</div>
+<div class="md:col-span-2">
+<label class="text-default-300 block mb-2.5" for="request-equipment">Оборудование</label>
+<select aria-label="Оборудование" class="w-full bg-default-900 h-12.5 inline-flex border-default-700 rounded text-white" id="request-equipment" maxlength="256" name="equipment" type="text"><option value="">Помогите подобрать оборудование</option><option value="pt-l">Ленточный конвейер ПТ-Л</option><option value="pt-r">Роликовый конвейер ПТ-Р</option><option value="pt-m">Модульный конвейер ПТ-М</option><option value="pt-n">Наклонный конвейер ПТ-Н</option><option value="pt-p">Поворотная секция ПТ-П</option><option value="pt-u">Ролики и опоры ПТ-У</option><option value="pt-a">Шкаф управления ПТ-А</option><option value="pt-d">Приводная секция ПТ-Д</option></select>
+</div>
+<div class="md:col-span-2">
+<label class="text-default-300 block mb-2.5" for="message">Описание задачи *</label>
+<textarea class="w-full bg-default-900 inline-flex border-default-700 rounded text-white" id="message" maxlength="4000" minlength="10" name="description" placeholder="Что нужно перемещать, между какими участками и в каких условиях?" required="" rows="5"></textarea>
+</div>
+<div>
+<button class="inline-flex py-3.75 px-6 items-center gap-5 text-default-900 rounded rounded-ee-2xl bg-white transition-all text-base font-medium" type="submit">
+                                Скачать запрос
+                            </button>
+</div>
+<p aria-live="polite" class="md:col-span-2 text-sm text-white" id="request-status" role="status"></p></form>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex gap-5 flex-nowrap w-full overflow-hidden mb-12.5">
+<ul class="infinite-scroll-inverse flex gap-5 justify-start items-center [&>li]:flex [&>li]:items-center [&>li]:justify-center [&>li]:bg-white [&>li]:rounded [&>li]:w-57 [&>li]:h-39 [&>li]:mx-auto [&>li>img]:w-25">
+<li><span class="industry-label">Производство</span></li>
+<li><span class="industry-label">Склад</span></li>
+<li><span class="industry-label">Упаковка</span></li>
+<li><span class="industry-label">Комплектация</span></li>
+<li><span class="industry-label">Логистика</span></li>
+<li><span class="industry-label">Сборка</span></li>
+<li><span class="industry-label">Маркировка</span></li>
+<li><span class="industry-label">Сортировка</span></li>
+<li><span class="industry-label">Перемещение</span></li>
+<li><span class="industry-label">Отгрузка</span></li>
+<li><span class="industry-label">Интеграция</span></li>
+<li><span class="industry-label">Обслуживание</span></li>
+</ul>
+<ul class="infinite-scroll-inverse flex gap-5 justify-start items-center [&>li]:flex [&>li]:items-center [&>li]:justify-center [&>li]:bg-white [&>li]:rounded [&>li]:w-57 [&>li]:h-39 [&>li]:mx-auto [&>li>img]:w-25">
+<li><span class="industry-label">Производство</span></li>
+<li><span class="industry-label">Склад</span></li>
+<li><span class="industry-label">Упаковка</span></li>
+<li><span class="industry-label">Комплектация</span></li>
+<li><span class="industry-label">Логистика</span></li>
+<li><span class="industry-label">Сборка</span></li>
+<li><span class="industry-label">Маркировка</span></li>
+<li><span class="industry-label">Сортировка</span></li>
+<li><span class="industry-label">Перемещение</span></li>
+<li><span class="industry-label">Отгрузка</span></li>
+<li><span class="industry-label">Интеграция</span></li>
+<li><span class="industry-label">Обслуживание</span></li>
+</ul>
+</div>
+<div class="flex items-stretch md:justify-center justify-between xl:gap-80.5 lg:gap-75 md:gap-45 gap-0 absolute inset-0">
+<div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+<div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+<div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+<div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+<div class="border border-dashed border-default-900 w-0.5 h-full opacity-7"></div>
+</div>
+<div class="absolute inset-0 size-full bg-[url(../images/bg-noice.gif)] opacity-4 bg-auto bg-repeat bg-position-[50%] object-cover"></div>
+</section>
+
+    </main>
+{{> footer }}
+
+</body>
+</html>

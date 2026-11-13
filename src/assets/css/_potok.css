@@ -1,0 +1,98 @@
+/* Fabrica layout preserved; Potok palette, Cyrillic typography, and component states. */
+@theme {
+  --font-heading: "Manrope", sans-serif;
+  --font-body: "Onest", sans-serif;
+  --color-primary: #C84318;
+  --color-primary-1: #D94B1E;
+  --color-primary-2: #C84318;
+  --color-primary-3: #7D321D;
+  --color-body-bg: #F3F4F2;
+  --color-body-color: #626D72;
+  --color-black: #182226;
+  --color-default-50: #F7F8F6;
+  --color-default-100: #EDEFEA;
+  --color-default-200: #D9DEDD;
+  --color-default-300: #C1C9C8;
+  --color-default-400: #A2AEAE;
+  --color-default-500: #7B898D;
+  --color-default-600: #626D72;
+  --color-default-700: #405054;
+  --color-default-800: #2C3B40;
+  --color-default-900: #182226;
+  --color-default-950: #101A1E;
+}
+html { scroll-padding-top: 110px; }
+body { text-wrap: pretty; }
+h1,h2,h3,h4 { overflow-wrap: anywhere; letter-spacing: -.035em; }
+button,a,input,select,textarea { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #C84318; outline-offset: 5px; }
+input:focus-visible,select:focus-visible,textarea:focus-visible { outline: 2px solid #D94B1E; outline-offset: 2px; }
+[hidden] { display: none !important; }
+a,button { touch-action: manipulation; }
+#mobile-menu a { padding-inline: 24px; }
+#mobile-menu { height: min(78vh, 650px); }
+#mobile-menu > div { max-height: min(78vh, 650px); }
+.industry-label { font: 600 17px "Manrope",sans-serif; letter-spacing:-.025em; color:var(--color-default-900); padding:15px; white-space:nowrap; }
+.potok-demo-note { font-size:12px;line-height:1.7;color:#A2AEAE;max-width:780px;margin:26px 0; }
+.potok-note { font-size:14px;line-height:1.65;color:var(--color-body-color); }
+.potok-filter-wrap { margin-top:40px; }
+.potok-filters { display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 16px; }
+.potok-filters button { border:1px solid var(--color-default-300);border-radius:6px;padding:12px 17px;font-size:14px;line-height:1.4;color:var(--color-default-900);background:#fff;transition:background .2s,color .2s; }
+.potok-filters button[aria-pressed="true"] { background:var(--color-primary);border-color:var(--color-primary);color:#fff; }
+.potok-product-photo { width:100%;height:210px;object-fit:cover; }
+.potok-product-card { display:flex;flex-direction:column; }
+.potok-product-card h3 { min-height:2.6em; }
+.potok-product-card > p { min-height:5.2em; }
+.potok-product-card .divide-y > div { gap:12px;align-items:flex-start; }
+.potok-product-card .divide-y > div > :last-child { text-align:right;max-width:62%; }
+.potok-card-actions { margin-top:auto;padding-top:26px;display:flex;flex-direction:column;gap:12px; }
+.potok-card-actions a { color:#fff;background:var(--color-primary);border-radius:4px 4px 16px 4px;text-align:center;padding:13px 15px;font-size:14px; }
+.potok-card-actions button { color:#CFD6D6;text-decoration:underline;text-underline-offset:5px;font-size:13px;padding:10px; }
+.potok-inline-link { display:inline-block;color:#fff;border-bottom:1px solid #778587;padding:10px 0;font-size:14px; }
+.potok-guide-control { display:flex;align-items:center;justify-content:space-between;gap:15px;border:1px solid #405054;border-radius:10px;background:#101A1E;padding:18px 20px;font-size:14px;color:#fff; }
+.potok-guide-control > :last-child { display:grid;place-items:center;width:40px;height:40px;border-radius:5px;background:#fff;color:#182226;font-size:23px;flex-shrink:0; }
+.potok-dialog { max-width:920px;width:calc(100% - 32px);max-height:90dvh;border:0;border-radius:12px;background:#F3F4F2;padding:0;color:#182226; }
+.potok-dialog::backdrop,.potok-image-dialog::backdrop { background:rgb(16 26 30 / .8);backdrop-filter:blur(5px); }
+.potok-dialog-photo { width:100%;height:320px;object-fit:cover; }
+.potok-dialog-body { padding:36px; }
+.potok-dialog-body h2 { font-size:clamp(26px,4vw,40px);line-height:1.2;margin:14px 0 22px; }
+.potok-dialog-body h3 { font-size:19px;margin:24px 0 10px; }
+.potok-dialog-body p,.potok-dialog-body li { line-height:1.65; }
+.potok-dialog-body ul { padding-left:22px;list-style:disc; }
+.potok-eyebrow { font-size:12px;color:var(--color-primary);letter-spacing:.06em; }
+.potok-dialog-close { position:absolute;right:16px;top:16px;z-index:5;display:grid;place-items:center;background:#fff;color:#182226;border:1px solid #D9DEDD;border-radius:50%;width:46px;height:46px;font-size:30px; }
+.potok-specs { margin:28px 0; }
+.potok-specs > div { display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #D9DEDD;padding:14px 0;font-size:15px; }
+.potok-specs dd { text-align:right;max-width:60%; }
+.potok-action { display:inline-flex;margin-top:26px;background:var(--color-primary);color:#fff;padding:16px 22px;border-radius:4px 4px 20px 4px;font-size:15px; }
+.potok-image-dialog { padding:0;border:0;border-radius:10px;max-width:95vw;max-height:95dvh;background:#182226; }
+.potok-image-dialog img { max-height:90dvh;max-width:90vw;object-fit:contain; }
+@media (max-width:767px) {
+ h1 { font-size:clamp(34px,9vw,48px) !important;line-height:1.15 !important; }
+ .potok-dialog-body { padding:26px 22px; }
+ .potok-dialog-photo { height:230px; }
+ #request-form { gap:22px; }
+ .potok-product-photo { height:240px; }
+ .potok-product-card h3,.potok-product-card > p { min-height:0; }
+ .potok-product-card > p { margin-bottom:18px; }
+ .potok-filters button { flex-grow:1; }
+ .potok-filter-wrap { margin-top:28px; }
+}
+@media (max-width:390px) {
+ .w-97 { width:calc(100vw - 40px); }
+ .gap-10 { gap:1.5rem; }
+}
+@media (prefers-reduced-motion:reduce) {
+ html { scroll-behavior:auto !important; }
+ *,*::before,*::after { animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important; }
+ .infinite-scroll,.infinite-scroll-inverse { animation:none !important; }
+}
+.potok-skip { position:fixed;top:8px;left:12px;z-index:1000;background:#182226;color:#fff;padding:12px 18px;border-radius:4px;transform:translateY(-150%); }
+.potok-skip:focus { transform:translateY(0); }
+.hs-dropdown-menu { position:absolute;top:100%;left:0;z-index:150; }
+.hs-dropdown.open .hs-dropdown-menu { opacity:1; }
+.potok-stage-tag { display:grid;place-items:center;border:1px solid #405054;border-radius:6px;padding:18px 22px;min-height:70px;color:#fff;font:600 14px "Manrope",sans-serif; }
+.potok-hero-meta { gap:24px; }
+@media(max-width:767px) { .potok-hero-meta { display:grid;grid-template-columns:1fr 1fr;gap:24px; }.potok-hero-meta > a { display:none; }.potok-hero-meta > :last-child { text-align:right; } }
+footer a { overflow-wrap:anywhere; }
+.potok-stages { flex-wrap:wrap;gap:12px; }

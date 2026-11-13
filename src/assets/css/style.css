@@ -1,0 +1,34 @@
+/*
+Template Name: Fabrica - Manufacturing Services Website TailwindCSS 4 Template
+Version: 1.0.0
+Author: Mostafa Akajdid
+Website: https://akajdidm.vercel.app/
+Email: mostafaakajdid6@gmail.com
+File: Style CSS File
+*/
+
+/* TailwindCSS */
+@import "tailwindcss";
+
+/* Preline UI */
+@import "../../../node_modules/preline/variants.css";
+@source "../../../node_modules/preline/dist/*.js";
+
+/* Plugin CSS */
+@import "swiper/swiper-bundle.css";
+@import "aos/dist/aos.css";
+
+/* Tailwind Plugin */
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+
+/* Iconify Icons */
+@plugin "@iconify/tailwind4" {
+    prefixes: tabler, lucide;
+}
+
+@import "./_config.css";
+@import "./_swiper.css";
+@import "./_general.css";
+@import "./_potok.css";
